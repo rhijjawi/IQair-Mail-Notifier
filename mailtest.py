@@ -4,10 +4,11 @@ import requests
 import time
 import json
 
-sender = 'ramzihijjawi@gmail.com'
-receivers = ['ramzihijjawi@gmail.com','ammakonnen@isumail.ac.ug','rhijjawi@isumail.ac.ug']
-gmail_pass = 'tayyxypbfxmeynzl'
-api_key = 'http://api.airvisual.com/v2/nearest_city?lat=0.234261%7D&lon=32.564202%7D&key=5244ee41-e016-4a75-9c7e-e4527229ac08'
+sender = '***@gmail.com'
+receivers = ['example@gmail.com','***@example.com','***@example.ac.ug']
+# use an App-Specific Password for this
+gmail_pass = '' 
+api_key = 'KEY GOES HERE'
 
 
 response = requests.get(api_key)
@@ -21,8 +22,8 @@ print (mainus)
 
 if aqius > 150:
     print('Current AQI is greater than 150')
-    message = """From: Ramzi <ramzihijjawi@gmail.com>
-To: Mailing List <weather@isumail.ac.ug>
+    message = """From: ***** <*****@gmail.com>
+To: Mailing List <***@***.ac.ug>
 Subject: Air Quality Index Threshold Passed "Potentially Dangerous"
 
 This is a test e-mail message.
@@ -35,8 +36,8 @@ This is a test e-mail message.
 
 if aqius <= 149:
     print('Current AQI is 100-149')
-    message = """From: Ramzi <ramzihijjawi@gmail.com>
-To: Mailing List <weather@isumail.ac.ug>
+    message = """From: Ramzi <****@gmail.com>
+To: Mailing List <****@****.ac.ug>
 Subject: Air Quality Index Threshold Passed ""
 
 This is a test e-mail message.
